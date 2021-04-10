@@ -25,7 +25,7 @@ namespace UI
             const int CELL_SIZE = 20;
 
             Cells = new Label[HEIGHT, WIDTH];
-            var game = new MineSweeper.MineSweeper(HEIGHT, WIDTH, NUM_OF_MINES);
+            var game = new MineSweeper.Game(HEIGHT, WIDTH, NUM_OF_MINES);
 
             for (int i = 0; i < HEIGHT; i++)
             {
@@ -47,7 +47,7 @@ namespace UI
             }
         }
 
-        private MouseEventHandler CreateLeftClickEvent(int row, int col, MineSweeper.MineSweeper game)
+        private MouseEventHandler CreateLeftClickEvent(int row, int col, MineSweeper.Game game)
         {
             return (object sender, MouseEventArgs e) =>
             {

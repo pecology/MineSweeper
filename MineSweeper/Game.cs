@@ -3,14 +3,14 @@ using System.Collections.Generic;
 
 namespace MineSweeper
 {
-    public class MineSweeper
+    public class Game
     {
-        public MineSweeper(int height, int width, IEnumerable<(int row, int col)> mineMaps)
+        public Game(int height, int width, IEnumerable<(int row, int col)> mineMaps)
         {
 
         }
 
-        public MineSweeper(int height, int width, int numberOfMines)
+        public Game(int height, int width, int numberOfMines)
         {
 
         }
