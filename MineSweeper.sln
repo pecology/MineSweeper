@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{90B9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MineSweeper", "MineSweeper\MineSweeper.csproj", "{0B15A764-583F-4FB7-88EF-67364848693E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{24DDF3C0-58C0-4055-972A-3AC93AE793D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0B15A764-583F-4FB7-88EF-67364848693E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B15A764-583F-4FB7-88EF-67364848693E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B15A764-583F-4FB7-88EF-67364848693E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24DDF3C0-58C0-4055-972A-3AC93AE793D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24DDF3C0-58C0-4055-972A-3AC93AE793D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24DDF3C0-58C0-4055-972A-3AC93AE793D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24DDF3C0-58C0-4055-972A-3AC93AE793D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
