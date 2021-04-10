@@ -32,5 +32,43 @@ namespace Test
 
             Assert.Throws<IndexOutOfRangeException>(() => game.Dig(row, col));
         }
+
+        [Fact(DisplayName = "爆弾を踏んだ時に、GameStateが「GameOver」になる")]
+        [Trait("メソッド", "Dig")]
+        public void DigTest3()
+        {
+            var game = new Game(1, 1, new[] { (0, 0) });
+            game.Dig(0, 0);
+
+            var expected = GameState.GameOver;
+            var actual = game.GameState;
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact(DisplayName = "爆弾を踏まなかったとき、GameStateが変わらない")]
+        [Trait("メソッド", "Dig")]
+        public void DigTest4()
+        {
+            var game = new Game(2, 2, new[] { (0, 0) });
+            game.Dig(0, 1);
+
+            var expected = GameState.Playing;
+            var actual = game.GameState;
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact(DisplayName = "残りのマスが爆弾だけになったとき、GameStateが「GameClear」になる")]
+        [Trait("メソッド", "Dig")]
+        public void DigTest5()
+        {
+            var game = new Game(2, 2, new[] { (0, 0) });
+            game.Dig(0, 1);
+            game.Dig(1, 0);
+            game.Dig(1, 1);
+
+            var expected = GameState.GameClear;
+            var actual = game.GameState;
+            Assert.Equal(expected, actual);
+        }
     }
 }
