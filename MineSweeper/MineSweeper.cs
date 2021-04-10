@@ -23,7 +23,7 @@ namespace MineSweeper
             }
         }
 
-        public DigResult Dig(int row, int col)
+        public void Dig(int row, int col)
         {
             throw new NotImplementedException();
         }
